@@ -23,33 +23,33 @@
 
 // Visibility utilities
 // For desktops
-.visible-phone     { display: none; }
-.visible-tablet    { display: none; }
-.visible-desktop   { display: block; }
-.hidden-phone      { display: block; }
-.hidden-tablet     { display: block; }
-.hidden-desktop    { display: none; }
+.visible-phone     { display: none !important; }
+.visible-tablet    { display: none !important; }
+.visible-desktop   { display: block !important; }
+.hidden-phone      { display: block !important; }
+.hidden-tablet     { display: block !important; }
+.hidden-desktop    { display: none !important; }
 
 // Phones only
 @media (max-width: 767px) {
   // Show
-  .visible-phone     { display: block; }
+  .visible-phone     { display: block !important; }
   // Hide
-  .hidden-phone      { display: none; }
+  .hidden-phone      { display: none !important; }
   // Hide everything else
-  .hidden-desktop    { display: block; }
-  .visible-desktop   { display: none; }
+  .hidden-desktop    { display: block !important; }
+  .visible-desktop   { display: none !important; }
 }
 
 // Tablets & small desktops only
 @media (min-width: 768px) and (max-width: 979px) {
   // Show
-  .visible-tablet    { display: block; }
+  .visible-tablet    { display: block !important; }
   // Hide
-  .hidden-tablet     { display: none; }
+  .hidden-tablet     { display: none !important; }
   // Hide everything else
-  .hidden-desktop    { display: block; }
-  .visible-desktop   { display: none; }
+  .hidden-desktop    { display: block !important; }
+  .visible-desktop   { display: none !important; }
 }
 
 // UP TO LANDSCAPE PHONE
